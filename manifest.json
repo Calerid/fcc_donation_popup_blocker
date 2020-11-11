@@ -1,5 +1,11 @@
 {
     "name": "fCC Popup Blocker",
     "version": "0.1",
-    "manifest_version": 2
+    "manifest_version":2,
+    "content_scripts": [
+        {
+            "matches": ["www.freecodecamp.org/*"],
+            "js": ["content.js"]
+        }
+    ]
 }
