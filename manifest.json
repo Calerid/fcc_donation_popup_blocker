@@ -1,10 +1,11 @@
 {
     "name": "fCC Popup Blocker",
-    "version": "0.1",
-    "manifest_version":2,
+    "version": "0.2",
+    "description": "An extension to block donation requests on freeCodeCamp",
+    "permissions": ["webRequest", "webRequestBlocking"],
     "content_scripts": [
         {
-            "matches": ["www.freecodecamp.org/*"],
+            "matches": ["*://www.freecodecamp.org/*"],
             "js": ["content.js"]
         }
     ]
